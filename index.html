@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://css.gg/css?=|code-slash" rel="stylesheet">
+
+    <title>Portfolio</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    body {
+        background-color: black;
+        width: 100%;
+
+    }
+    
+    .minicontainer a{
+        list-style: none;
+        font-size: 1.5em;
+        margin: 5px 20px;
+        cursor: pointer;
+        color: grey;
+        font-weight: bold;
+    }
+
+    nav {
+        display: flex;
+
+    }
+
+    nav p {
+        flex-basis: 10%;
+        font-size: 1.5em;
+        margin: 5px 10px;
+        color: yellow;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .minicontainer {
+        display: flex;
+        flex-basis: 80%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .minicontainer a {
+        text-decoration: none;
+    }
+
+    .minicontainer a:hover {
+        color: yellow;
+    }
+
+    .meet {
+        color: yellow;
+
+    }
+
+    .introduction {
+        color: white;
+        font-size: 2.5em;
+        font-weight: bold;
+        border-right: 4px solid white;
+        animation: character 3s steps(18) infinite;
+        white-space: nowrap;
+        overflow: hidden;
+
+    }
+
+    @keyframes character {
+        0% {
+            width: 0ch;
+        }
+
+        100% {
+            width: 18ch;
+        }
+    }
+
+    .hellothere {
+        font-size: 1.2em;
+        color: grey;
+    }
+
+    .maincontent {
+        display: flex;
+        height: 94vh;
+        align-items: center;
+    }
+
+    .info {
+        flex-basis: 65%;
+        margin-left:9vw;
+        color: grey;
+
+    }
+
+    .myimage {
+        flex-basis: 35%;
+    }
+
+    .cv {
+        color: black;
+        text-decoration: none;
+        border: 3px solid black;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1em;
+        width: 7vw;
+        height: 3.5vh;
+        background-color: yellow;
+        margin-top: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+
+    }
+
+    .cv:hover {
+        border: 3px solid yellow;
+        background-color: black;
+        color: white;
+    }
+
+    .icons {
+        color: grey;
+        font-size: 0.8em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #instagram,
+    #linkdin,
+    #facebook {
+        font-size: 2em;
+        margin: 10px 5px;
+        color: grey;
+
+    }
+
+    #instagram:hover,
+    #linkdin:hover,
+    #facebook:hover {
+        color: yellow;
+    }
+
+    .me,
+    .project {
+        font-family: 3em;
+        color: yellow;
+        text-align: center;
+
+    }
+
+    .aboutme {
+        display: flex;
+        height: 80vh;
+
+    }
+
+    .firstcontainer {
+        flex-basis: 60%;
+
+    }
+
+    .secondcontainer {
+        flex-basis: 40%;
+
+    }
+
+    .image {
+        transition: 0.8s;
+        height: 40vh;
+        width: 37vw;
+        margin: 50px 0;
+    }
+
+    .front,
+    .front1 {
+        color: white;
+    }
+
+    .front {
+        font-size: 2em;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .front1 {
+        font-size: 1.3em;
+        margin: 40px 30px;
+    }
+
+    .secondcontainer:hover .range {
+        opacity: 1;
+    }
+
+    .image:hover {
+        background-color: black;
+        opacity: 0.6;
+    }
+
+    .range:hover .secondcontainer {
+        background-color: black;
+        opacity: 0.6;
+    }
+
+    .range {
+        transition: 1s;
+        opacity: 0;
+        position: relative;
+        top: -47vh;
+    }
+
+    .html {
+        margin: 0 15px;
+        font-size: 1.2em;
+        display: flex;
+        color: white;
+    }
+
+    .make {
+        margin: 10px 15px;
+        position: relative;
+        background-color: grey;
+        /* width: 30%; */
+        height: 3.7vh;
+        border-radius: 20px;
+    }
+
+    .bar {
+        position: absolute;
+        background-color: yellow;
+        width: 10vw;
+        height: 3.7vh;
+        border-radius: 20px;
+    }
+
+    .htmlcontent,
+    .percentage,
+    .percentage1,
+    .percentage2,
+    .percentage3 {
+        margin: 10px 5px;
+    }
+
+    .hello {
+        color: white;
+    }
+
+    .sequence {
+        margin: 40px 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .box-1,
+    .box-2,
+    .box-3,
+    .box-4,
+    .box-5 {
+        width: 20vw;
+        margin: 30px 60px;
+        height: 38vh;
+        border: 3px solid yellow;
+        border-radius: 5px;
+
+
+    }
+
+    .material-icons {
+        margin: 15px;
+        color: gray;
+        font-size: 50px;
+        display: block;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .commingsoon {
+        margin: 15px;
+        font-weight: bold;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+
+    }
+
+    .para {
+        color: white;
+        font-size: 1.1em;
+        margin: 10px;
+    }
+
+    form {
+        width: 35%;
+        display: block;
+        margin: 50px auto;
+        height: auto;
+        border-radius: 10px;
+        border: 4px solid black;
+        box-shadow: 2px 2px 20px 10px grey;
+    }
+
+    .name {
+        color: white;
+        font-size: 1.1em;
+    }
+
+    .margin {
+        margin: 20px;
+    }
+    #items{
+        display: none;
+    }
+    .area {
+        font-size: 1.1em;
+        height: 4vh;
+        width: 25vw;
+        background-color: black;
+        color: yellow;
+        border: 3px solid white;
+        border-radius: 5px;
+    }
+
+    .margin20px {
+        margin: 20px 10px;
+        white-space: nowrap;
+
+    }
+
+    .work {
+        border: 3px solid white;
+        border-radius: 5px;
+        width: 4vw;
+        background-color: black;
+        color: yellow;
+    }
+
+    input[type="checkbox"] {
+        accent-color: yellow;
+    }
+
+    .placeholder {
+        margin: 10px;
+        color: white;
+        font-size: 1.1em;
+    }
+
+    .number {
+        text-align: center;
+        font-size: 1.1em;
+        height: 4vh;
+        color: yellow;
+        border: 3px solid white;
+        border-radius: 5px;
+        width: 5vw;
+        background-color: black;
+    }
+
+    .submit {
+        border: 3px solid black;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1em;
+        padding: 5px 10px;
+        background-color: yellow;
+        cursor: pointer;
+        
+    }
+
+    .submit:hover {
+        border: 3px solid yellow;
+        background-color: black;
+        color: white;
+    }
+
+    .submitbutton {
+        width: 100%;
+    margin: 20px 0;
+    text-align: center;
+    }
+
+    .handles {
+        font-size:100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .connect{
+        color: yellow;
+        text-align: center;
+        font-size: 100%;
+        width: auto;
+    }
+    .hover{
+        color: yellow;
+    }
+    .make {
+            width: 80%;
+            height: auto;
+            margin: 5px 10px;
+        }
+        .bar {
+            height: 100%;
+            width: 80%;
+        }
+        #javascript{
+            width:70%;
+        }
+        #photoshop{
+            width: 60%;
+        }
+        #python{
+            width: 60%;
+        }
+        #mathematics{
+            width: 80%;
+        }
+
+
+
+    @media (max-width:768px) {
+        
+        .container {
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+        }
+        .container::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        background: url("my_image-removebg-preview.png") no-repeat center center/cover;
+    
+    }
+    .me{
+        margin-top: 5%;
+    }
+        .navbar{
+            position: sticky;
+        }
+        .crossicon{
+            z-index: 1;
+        }
+        .navbaricon{
+            z-index: 1;
+            padding: 0 5px;
+            opacity: 1;
+        }
+        .navbaricon div{
+            width: 6vw;
+            color: grey;
+            background-color: grey;
+            margin: 6px 0;
+            z-index: 2;
+            border: 3px solid;
+
+        }
+        #mark1{
+            font-size: 240%;
+            color: grey;
+            display: none;
+            padding: 0 5px;
+        }
+        .absolute{
+            position: absolute;
+    top: 35vh;
+    width: 100%;
+        }
+        #items{
+            height: 100vh;
+            background: white;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            font-size: 130%;
+            transition: 1s;
+        }
+     
+        .absolute a{
+            color: grey;
+            font-weight: bold;
+            font-size: 150%;
+            display: block;
+            text-decoration: none;
+            
+        }
+        .absolute a:hover{
+            color: yellow;
+        }
+
+
+        nav p {
+            font-size: 100%;
+        }
+
+        .minicontainer a {
+            display: none;
+        }
+
+        .info {
+            flex-basis: 100%;
+
+        }
+
+        .maincontent {
+            margin: 0 auto;
+        }
+
+        .hellothere {
+            font-size: 100%;
+        }
+
+        .myimage {
+            flex-basis: 0%;
+        }
+
+        .introduction {
+            font-size: 180%;
+        }
+
+        .lorem {
+            font-size: 100%;
+            width: 80%;
+        }
+
+        .cv {
+            font-size: 105%;
+            width: auto;
+            height: auto;
+        }
+
+        .icons,
+        .handles {
+            font-size: 100%;
+            width: 100%;
+        }
+
+        .me {
+            font-size: 200%;
+        }
+
+        .firstcontainer {
+            flex-basis: 100%;
+
+        }
+
+        .secondcontainer {
+            flex-basis: 100%;
+        }
+
+        .aboutme {
+            display: block;
+        }
+       
+        .front {
+            font-size: 160%;
+            margin-top: 40px;
+        }
+
+        .front1 {
+            margin: 20px 20px;
+            font-size: 85%;
+            width: auto;
+        }
+
+        .image {
+            margin: 10px 0;
+            width: 100%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        .range {
+            transition: 1s;
+            opacity: 0;
+            position: relative;
+            top: -39vh;
+        }
+
+        .html {
+            font-size: 90%;
+            margin-left: 17px;
+        }
+
+        .make {
+            width: 70%;
+            height: auto;
+            margin: 5px 10px;
+        }
+        .bar {
+            height: 100%;
+            width: 90%;
+        }
+        #javascript{
+            width:70%;
+        }
+        #photoshop{
+            width: 60%;
+        }
+        #python{
+            width: 60%;
+        }
+        #mathematics{
+            width: 80%;
+        }
+        .sequence {
+            display: block;
+        }
+
+        .box-5 {
+            visibility: 0;
+        }
+
+        .box-1,
+        .box-2,
+        .box-3,
+        .box-4,
+        .box-5 {
+            display: block;
+            height: auto;
+            width: auto;
+            margin: 30px 40px;
+        }
+
+        .commingsoon {
+            font-size: 140%;
+        }
+
+        .para {
+            font-size: 100%;
+        }
+
+        .margin {
+            margin: 10px;
+        }
+
+        .name {
+            font-size: 95%;
+        }
+
+        form {
+            width: 85%;
+            height: auto;
+        }
+
+        .area {
+            width: auto;
+            height: auto;
+        }
+
+        .placeholder {
+            font-size: 95%;
+            margin: 0;
+            white-space: normal;
+        }
+
+        .work {
+            width: auto;
+            height: auto;
+        }
+
+        .number {
+            height: auto;
+            width: auto;
+        }
+
+        .submit {
+            
+            font-size: 100%;
+            width: auto;
+            height: auto;
+
+        }
+
+        .submitbutton {
+            font-size: 105%;
+            width: auto;
+            height: auto;
+            text-align: center;
+        }
+        
+        .project {
+            margin-top: auto;
+        }
+        .hover{
+            color: yellow;
+            width: auto;
+            display: block;
+            text-align: center;
+        }
+        .lorem{
+            color: white;
+            opacity:0.7;
+        }
+     
+        
+    }
+
+    @media (max-width:630px) {
+        .project{
+            margin-top: 80%;
+        }
+    }
+    
+
+    @media (min-width:768px) and (max-width:1500px) {
+        
+        .minicontainer a{
+            width: auto;
+            height: auto;
+        }
+        .me{
+            margin-top: 5%;
+        }
+        .container::before{
+        content: "";
+        position: absolute;
+        right: 0%;
+        z-index: -1;
+        opacity: 1;
+        width: 60%;
+        height: 70%;
+        background: url("my_image-removebg-preview.png") no-repeat center center/cover;
+    
+    }
+       
+        .icons,
+        .handles {
+            font-size: 120%;
+            width: 100%;
+        }
+
+        .submitbutton{
+            text-align: center;
+        }
+        .cv{
+            font-size: 120%;
+            width: auto;
+            height: auto;
+        }
+        .image{
+            height: 75%;
+        }
+        .range{
+            width: auto;
+            top: -60vh;
+        }
+        .front1{
+            font-size: 100%;
+        }
+        .make{
+            width: 50%;
+            margin-right: 0;
+        }
+        .html{
+            font-size: 80%;
+            margin: 0 80px;
+            margin-left: 10px;
+        }
+        .firstcontainer{
+            flex-basis: 50%;
+        }
+        .me{
+            font-size: 210%;
+        }
+        .project{
+            margin-top: auto;
+        }
+        .secondcontainer{
+            flex-basis: 50%
+        }
+        .box-1,.box-2,.box-3,.box-4,.box-5{
+            width: auto;
+            height: auto;
+            margin: 30px;
+        }
+        .submit {
+
+        font-size: 105%;
+        width: auto;
+        height: auto;
+        }
+
+        .margin {
+            margin: 10px;
+        }
+
+        .name {
+            font-size: 95%;
+        }
+
+        form {
+            width: 40%;
+            height: auto;
+        }
+
+        .area {
+            width: auto;
+            height: auto;
+        }
+
+        .placeholder {
+            font-size: 95%;
+            margin: 0;
+            white-space: normal;
+        }
+
+        .work {
+            width: auto;
+            height: auto;
+        }
+
+        .number {
+            height: auto;
+            width: auto;
+        }
+        .handles{
+            width: auto;
+            height: auto;
+        }
+}
+@media (min-width:1500px) and (max-width:3000px){
+            .range{
+                top: -45vh;
+            }
+            .items{
+                display: none;
+            }
+            .make{
+                width: 65%;
+            }
+            .container::before{
+            content: "";
+            position: absolute;
+            right: -5%;
+            z-index: -1;
+            opacity: 1;
+            width: 70%;
+            height: 80%;
+            background: url("my_image-removebg-preview.png") no-repeat center center/cover;
+    
+    }
+        }
+    
+</style>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <p>Meet</p>
+                <div class="minicontainer">
+                    <a>Home</a>
+                    <a href="#1">About Me</a>
+                    <a href="#2">Projects</a>
+                    <a href="#3">Contact Me</a>
+                </div>
+                <div id="items">
+                    <div class="absolute">
+                    <a>Home</a>
+                    <a href="#1">About Me</a>
+                    <a href="#2">Projects</a>
+                    <a href="#3">Contact Me</a>
+                    </div>
+                </div>
+                <div class="navbaricon" id="nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="crossicon">
+                    <div id="mark1">X</div>
+                
+                </div>
+            </nav>
+        </div>
+        <div class="maincontent">
+            <div class="info">
+                <p class="hellothere">Hello!! There</p>
+                <p class="introduction">I am <span class="meet">Meet</span> Chaklasiya <span class="pointer"></span></p>
+                <p class="lorem">Welcome to the WebSite. This is my First Web-development Project, I am currently pursuing B.tech in Petroleum Engineering at PDEU.</p>
+                <div class="buttons">
+                    <a class="link" href="MEET CHAKLASIYA CV.pdf" download><button class="cv">Download CV</button></a>
+                    <button class="cv" id="contact">Contact</button>
+                </div>
+                <div class="icons">
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+                        rel="stylesheet" />
+                    <a href="https://www.instagram.com/meet_chaklasiya/"><i class="fa fa-instagram" id="instagram"
+                            aria-hidden="true"></i></a>
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <a href="https://www.linkedin.com/in/meet-chaklasiya-6b29451b9/"><i class="fa fa-linkedin-square"
+                            id="linkdin"></i></a>
+                    <a href="https://www.facebook.com/meet.chaklasiya.7/"><i class="fa fa-facebook-f"
+                            id="facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="myimage">
+                <!-- <img src="my_image-removebg-preview.png" alt=""> -->
+            </div>
+        </div>
+        <h1 class="me" id="1">About me</h1>
+        <div class="aboutme">
+            <div class="firstcontainer">
+                <p class="front">I am the Frontend-Webdevloper</p>
+                <p class="front1">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias modi aut tempora ipsa. Fugiat quisquam molestiae hic rem odit, repellat omnis corporis, rerum exercitationem dicta officiis eveniet praesentium dolores sunt repellendus laboriosam, error vel consequatur dolorum recusandae delectus nobis voluptatum cupiditate! Ratione itaque placeat, quas corporis officia maxime, molestiae adipisci in consequatur eius a deserunt qui id, temporibus vel sequi numquam. Ipsum saepe deserunt dolorem odit atque sit neque magni explicabo voluptatum, molestiae quos id, qui fugiat autem, consequatur rem ipsam perferendis fugit error. Eum illo dolor, culpa natus incidunt voluptatem voluptate repellendus enim cum molestiae a modi consequatur distinctio.
+                    <span class="hover">Hover/click on image</span>
+            </div>
+            <div class="secondcontainer">
+                <img class="image" src="skills.jpg" alt="" >
+                <div class="range">
+                    <div class="html">
+                        <span class="htmlcontent">HTML</span>
+                        <div class="make">
+                            <div class="bar"></div>
+                        </div>
+                        <span class="percentage">90%</span>
+                    </div>
+                    <div class="html">
+                        <span class="htmlcontent">CSS</span>
+                        <div class="make">
+                            <div class="bar"></div>
+                        </div>
+                        <span class="percentage">90%</span>
+                    </div>
+                    <div class="html">
+                        <span class="htmlcontent">JAVASCRIPT</span>
+                        <div class="make">
+                            <div class="bar" id="javascript"></div>
+                        </div>
+                        <span class="percentage1">70%</span>
+                    </div>
+                    <div class="html">
+                        <span class="htmlcontent">PHOTOSHOP</span>
+                        <div class="make">
+                            <div class="bar" id="photoshop"></div>
+                        </div>
+                        <span class="percentage2">60%</span>
+                    </div>
+                    <div class="html">
+                        <span class="htmlcontent">PYTHON</span>
+                        <div class="make">
+                            <div class="bar" id="python"></div>
+                        </div>
+                        <span class="percentage2">60%</span>
+                    </div>
+                    <div class="html">
+                        <span class="htmlcontent">MATHEMATICS</span>
+                        <div class="make">
+                            <div class="bar" id="mathematics"></div>
+                        </div>
+                        <span class="percentage3">80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="project" id="2">Projects</h1>
+        <div class="projects">
+            <div class="sequence">
+                <div class="box-1">
+                    <i id="person" class="material-icons">computer</i>
+                    <h3 class="commingsoon">Coming soon</h3>
+                    <p class="para">Lorem ipsum dolor sit amet consectetu adipisicing elit. Quam sapiente, iste
+                        explicabo
+                        debitis quos</p>
+                </div>
+                <div class="box-2">
+                    <i id="person" class="material-icons">computer</i>
+                    <h3 class="commingsoon">Coming soon</h3>
+                    <p class="para">Lorem ipsum dolor sit amet consectetu adipisicing elit. Quam sapiente, iste
+                        explicabo
+                        debitis quos</p>
+                </div>
+                <div class="box-3">
+                    <i id="person" class="material-icons">computer</i>
+                    <h3 class="commingsoon">Coming soon</h3>
+                    <p class="para">Lorem ipsum dolor sit amet consectetu adipisicing elit. Quam sapiente, iste
+                        explicabo
+                        debitis quos</p>
+                </div>
+                <div class="box-4">
+                    <i id="person" class="material-icons">computer</i>
+                    <h3 class="commingsoon">Coming soon</h3>
+                    <p class="para">Lorem ipsum dolor sit amet consectetu adipisicing elit. Quam sapiente, iste
+                        explicabo
+                        debitis quos</p>
+                </div>
+                <div class="box-5">
+                    <i id="person" class="material-icons">computer</i>
+                    <h3 class="commingsoon">Coming soon</h3>
+                    <p class="para">Lorem ipsum dolor sit amet consectetu adipisicing elit. Quam sapiente, iste
+                        explicabo
+                        debitis quos</p>
+                </div>
+            </div>
+        </div>
+        <h1 class="me" id="3">Contact Me</h1>
+        <div class="formstarts">
+            <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLScIm9x-s1zmtPal6odO8uVvnzvn7diyBIKO-qKpYrDh3riEkQ/formResponse"
+                enctype="text/plain" target="hidden_iframe">
+                <div class="margin">
+                    <span class="name">Name : </span><input class="area" name="entry.1732458412" type="text" required>
+                </div>
+                <div class="margin">
+                    <span class="name">Email : </span><input class="area" name="entry.232164114" type="email" required>
+                </div>
+                <div class="margin">
+                    <span class="name">Suggestions : </span><input type="text" name="entry.1870036199" class="area">
+                </div>
+                <div class="margin20px">
+                    <span class="placeholder">If you want me to work with you (Yes/No)</span><input type="text"
+                        name="entry.1934554305" class="work">
+                </div>
+                <div class="margin">
+                    <span class="name">Feedback :</span><input class="number" name="entry.849719414" type="number"
+                        max="5" min="0" required>
+                </div>
+                <div class="submitbutton">
+                    <button class="submit">Submit</button>
+                </div>
+                <div class="connect">
+                    click on below icons too connect with me
+                </div>
+                <div class="handles">
+                    
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+                        rel="stylesheet" />
+                    <a href="https://www.instagram.com/meet_chaklasiya/"><i class="fa fa-instagram" id="instagram"
+                            aria-hidden="true"></i></a>
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <a href="https://www.linkedin.com/in/meet-chaklasiya-6b29451b9/"><i class="fa fa-linkedin-square"
+                            id="linkdin"></i></a>
+                    <a href="https://www.facebook.com/meet.chaklasiya.7/"><i class="fa fa-facebook-f"
+                            id="facebook"></i></a>
+                </div>
+                <iframe id="hidden_iframe" name="hidden_iframe" style="display:none;"></iframe>
+            </form>
+        </div>
+    </div>
+
+
+<script>
+    document.getElementById("nav").addEventListener("click",e=>{
+    document.getElementById("items").style.display = "block"
+    document.getElementById("nav").style.display = "none"
+    document.getElementById("mark1").style.display = "block"
+    document.querySelector(".lorem").style.opacity = "1"
+
+        
+    })
+
+    document.getElementById("mark1").addEventListener("click", e=>{
+        document.getElementById("items").style.display = "none"
+        document.getElementById("nav").style.display = "block"
+        document.getElementById("mark1").style.display = "none"
+        document.querySelector(".lorem").style.opacity = "0.7"
+    })
+
+    document.getElementById("items").addEventListener("click",e=>{
+        document.getElementById("items").style.display = "none"
+        document.getElementById("mark1").style.display = "none"
+        document.getElementById("nav").style.display = "block"
+    })
+
+    document.getElementById("contact").addEventListener("click",e=>{
+        window.scrollTo(0,3000);
+    })
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/62f924e337898912e962f2b2/1gaejg8fe';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>
